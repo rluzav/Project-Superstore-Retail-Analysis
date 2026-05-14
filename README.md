@@ -7,6 +7,7 @@ Este proyecto presenta un análisis integral de datos de ventas (dataset "Sample
 * **Bibliotecas:** `Pandas`, `Seaborn`, `Matplotlib`, `SQLAlchemy`.
 * **Base de Datos:** SQL Server.
 * **Entorno:** Jupyter Notebooks (`.ipynb`).
+---
 
 ## ⚙️ Arquitectura del Pipeline
 El flujo de trabajo se divide en etapas modulares para garantizar la escalabilidad:
