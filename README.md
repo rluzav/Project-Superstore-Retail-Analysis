@@ -35,7 +35,7 @@ El flujo de trabajo se divide en etapas modulares para garantizar la escalabilid
 ## 📊 Visualización de Resultados
 
 ### 1. Desempeño por Categorías y Regiones
-![Top Ciudades](picture/1_top10_ciudades.png)
+![Top Ciudades](picture/%201_top10_ciudades.png)
 ![Profit por Categoría](picture/%202_ventas_profit_categoria.png)
 
 ### 2. Segmentación y Rentabilidad
