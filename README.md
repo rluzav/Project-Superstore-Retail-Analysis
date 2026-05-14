@@ -14,6 +14,23 @@ El flujo de trabajo se divide en etapas modulares para garantizar la escalabilid
 1. **`1_Limpieza_data.ipynb`**: Carga del CSV, normalización de tablas (`Sales`, `Customers`, `Products`), manejo de duplicados y validación de integridad.
 2. **`2_carga_sql.ipynb`**: Automatización del proceso ETL para insertar los datos limpios en una base de datos relacional.
 3. **`3_graficos.ipynb`**: Extracción mediante consultas SQL optimizadas y generación de visualizaciones estratégicas.
+---
+
+## 🗄️ Diccionario de Datos y Modelo Relacional
+
+El dataset original contenía una estructura plana de 21 columnas. Para optimizar la gestión de la información, se aplicó una **normalización** separando los datos en entidades lógicas mediante Python:
+
+| Entidad | Campos Incluidos |
+| :--- | :--- |
+| **`Sales`** (Hechos) | `Row ID`, `Order ID`, `Order Date`, `Ship Date`, `Ship Mode`, `Sales`, `Quantity`, `Discount`, `Profit` |
+| **`Customers`** (Dimensión) | `Customer ID`, `Customer Name`, `Segment`, `Country`, `City`, `State`, `Postal Code`, `Region` |
+| **`Products`** (Dimensión) | `Product ID`, `Product Name`, `Category`, `Sub-Category` |
+
+### 🛠️ Lógica de Limpieza en Python
+Utilizando la librería **Pandas**, se realizó la siguiente transformación:
+* **Separación de Entidades:** Se crearon DataFrames independientes para Clientes y Productos.
+* **Eliminación de Redundancia:** Se aplicó `.drop_duplicates()` sobre `Customer ID` y `Product ID` para garantizar que cada entidad sea única en su tabla de dimensión.
+* **Integridad Referencial:** Se mantuvo la tabla de `Sales` vinculada a las dimensiones mediante sus respectivas claves foráneas, asegurando un modelo relacional sólido en SQL Server.
 
 
 ---
