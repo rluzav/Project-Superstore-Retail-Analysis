@@ -13,7 +13,7 @@ CREATE TABLE Customers (
     state         VARCHAR(100) NOT NULL,
     postal_code   INT          NOT NULL,
     region        VARCHAR(50)  NOT NULL,
-  
+    CONSTRAINT PK_clientes PRIMARY KEY (customer_id)
 );
 GO
 
@@ -22,7 +22,7 @@ CREATE TABLE Products  (
     product_name  VARCHAR(255)  NOT NULL,
     category      VARCHAR(50)   NOT NULL,
     sub_category  VARCHAR(50)   NOT NULL,
-   
+    CONSTRAINT PK_productos PRIMARY KEY (product_id)
 );
 GO
 
@@ -38,6 +38,10 @@ CREATE TABLE Sales (
     quantity      INT            NOT NULL,
     discount      DECIMAL(5,2)   NOT NULL,
     profit        DECIMAL(12,4)  NOT NULL,
-
+    CONSTRAINT PK_ventas PRIMARY KEY (row_id),
+    CONSTRAINT FK_ventas_clientes FOREIGN KEY (customer_id)
+        REFERENCES clientes(customer_id),
+    CONSTRAINT FK_ventas_productos FOREIGN KEY (product_id)
+        REFERENCES productos(product_id)
 );
 GO
