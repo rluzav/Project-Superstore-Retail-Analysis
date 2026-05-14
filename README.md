@@ -34,17 +34,15 @@ El flujo de trabajo se divide en etapas modulares para garantizar la escalabilid
 
 
 
-## 📂 Estructura del Repositorio
+## 📂Estructura del Repositorio
 ```text
 Project-Superstore-Retail-Analysis/
-├── data/               # Dataset original (CSV)
-├── notebooks/          # Notebooks de Jupyter (ETL + Análisis)
-├── picture/            # Gráficos exportados (.png)
-├── SuperstoreRetail.sql# Script DDL de la base de datos
-└── README.md           # Documentación del proyecto
+├── data/               # Dataset original (CSV).
+├── notebooks/          # Notebooks de Jupyter (ETL + Análisis).
+├── picture/            # Gráficos exportados (.png).
+├── SuperstoreRetail.sql# Script DDL de la base de datos.
+└── README.md           # Documentación del proyecto.
 
 
-## 👨‍💻 Autor
+## 👨‍💻Autor
 Renzo Luza 
-
-##
