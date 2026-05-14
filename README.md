@@ -2,15 +2,6 @@
 
 Este proyecto presenta un análisis integral de datos de ventas (dataset "Sample - Superstore"), documentando todo el ciclo de vida de los datos: desde la **limpieza y transformación (ETL)** hasta la **visualización estratégica** de negocio.
 
-## 📂 Estructura del Repositorio
-```text
-Project-Superstore-Retail-Analysis/
-├── data/               # Dataset original (CSV)
-├── notebooks/          # Notebooks de Jupyter
-├── picture/            # Gráficos exportados (.png)
-├── SuperstoreRetail.sql# Modelo Relacional (DDL)
-└── README.md
-
 ## 🚀 Tecnologías Utilizadas
 * **Lenguajes:** Python, SQL (T-SQL).
 * **Bibliotecas:** `Pandas`, `Seaborn`, `Matplotlib`, `SQLAlchemy`.
@@ -44,7 +35,7 @@ El flujo de trabajo se divide en etapas modulares para garantizar la escalabilid
 ## 📊 Visualización de Resultados
 
 ### 1. Desempeño por Categorías y Regiones
-![Top Ciudades](picture/%201_top10_ciudades.png)
+![Top Ciudades](picture/1_top10_ciudades.png)
 ![Profit por Categoría](picture/%202_ventas_profit_categoria.png)
 
 ### 2. Segmentación y Rentabilidad
@@ -71,3 +62,7 @@ Project-Superstore-Retail-Analysis/
 ├── picture/            # Gráficos exportados (.png)
 ├── SuperstoreRetail.sql# Script DDL de la base de datos
 └── README.md           # Documentación del proyecto
+
+
+## 👨‍💻 Autor
+Renzo Luza 
